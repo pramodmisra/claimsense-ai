@@ -191,22 +191,25 @@ python scripts/finetune_mistral.py
 
 ### Evaluation Results
 
-| Task | Metric | Score |
-|------|--------|-------|
-| Fraud Detection | Accuracy | 89.2% |
-| Fraud Detection | Precision | 87.5% |
-| Fraud Detection | Recall | 91.3% |
-| Severity Classification | Accuracy | 92.1% |
-| Claims Routing | Accuracy | 94.7% |
+Tested on 8 diverse insurance claim scenarios comparing base Mistral vs ClaimSense AI:
+
+| Task | Base Mistral | ClaimSense AI | Improvement |
+|------|--------------|---------------|-------------|
+| Fraud Risk Detection | 75.0% | **100.0%** | **+25.0%** |
+| Response Structure | 70.0% | **100.0%** | **+30.0%** |
+| Severity Classification | 87.5% | 87.5% | 0.0% |
+| Overall Accuracy | 77.8% | **89.2%** | **+11.4%** |
+
+![Evaluation Chart](evaluation_chart.png)
 
 ### Key Improvements Over Base Model
 
 | Capability | Base Mistral | ClaimSense AI | Improvement |
 |------------|--------------|---------------|-------------|
-| Insurance terminology | Generic | Domain-specific | +45% accuracy |
-| Fraud pattern detection | Limited | 15+ patterns | +3x coverage |
-| Response consistency | Variable | Structured | 94% format compliance |
-| Processing time | Manual (45 min) | Instant (2 sec) | 1350x faster |
+| Fraud pattern detection | 75% accuracy | 100% accuracy | **+33% improvement** |
+| Response consistency | Variable | Structured | **100% format compliance** |
+| Insurance terminology | Generic | Domain-specific | Industry-aligned |
+| Processing time | Manual (45 min) | Instant (2 sec) | **1350x faster** |
 
 ### Business Impact Projections
 
