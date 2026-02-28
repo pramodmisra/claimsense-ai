@@ -1,5 +1,6 @@
 gradio>=4.0.0
-transformers>=4.36.0
 torch
+transformers>=4.36.0
 accelerate
 huggingface_hub
+requests
