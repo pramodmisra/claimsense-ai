@@ -8,7 +8,12 @@ import time
 import requests
 import os
 
-MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "YOUR_MISTRAL_API_KEY")
+MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY")
+
+if not MISTRAL_API_KEY:
+    print("ERROR: MISTRAL_API_KEY environment variable not set")
+    print("Run: export MISTRAL_API_KEY='your-key'")
+    exit(1)
 
 # Test cases with expected outputs
 TEST_CASES = [
