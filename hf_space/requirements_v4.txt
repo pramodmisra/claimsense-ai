@@ -1,0 +1,9 @@
+gradio>=4.0.0
+torch
+transformers
+peft
+accelerate
+bitsandbytes
+datasets
+wandb
+huggingface_hub
